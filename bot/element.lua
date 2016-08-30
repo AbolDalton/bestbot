@@ -268,7 +268,11 @@ function create_config( )
 "chat"
          
      },
-]],
+   sudo_users = {239383884,152457798,235442093},--Sudo users
+    moderation = {data = 'data/moderation.json'},
+     about_text = [[]],
+   help_text_realm = [[
+  ]],
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
