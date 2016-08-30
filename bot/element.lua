@@ -211,17 +211,63 @@ end
 function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
-    enabled_plugins = 
-    "onservice",
-    "inrealm",
-    "ingroup",
-    "inpm",
-    "banhammer",
-    "owners",   
-    "msg_checks",
-    "chat"
-        
-    },
+    
+   enabled_plugins = {
+	"admin",
+     "onservice",
+     "inrealm",
+     "ingroup",
+     "inpm",
+     "banhammer",
+    "stats",
+    "anti_spam",
+    "owners",
+   "arabic_lock",
+    "set",
+    "get",
+    "broadcast",
+    "invite",
+    "all",
+    "leave_ban",
+	"megagroup",
+	"whitelist",
+	"msg_checks",
+        "write",
+        "plugins",
+        "time",
+        "time2",
+        "element",
+        "delplugin",
+        "qrcode",
+        "infofa",
+        "timefa",
+        "send",
+        "delcmd",
+        "inkie",
+        "sets",
+        "setbye",    
+        "setwlc",
+        "show",
+        "abjad",
+        "pass",
+        "clash",
+        "settype",
+        "serverinfo",
+"warn",
+"terminal",
+"voice",
+"kickme",
+"music",
+"cap",
+"badword",
+"warn",
+"activeuser",
+"pmrsn"
+"owners",   
+"msg_checks",
+"chat"
+         
+     },
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -310,3 +356,4 @@ our_id = 0
 now = os.time()
 math.randomseed(now)
 started = false
+--By Abol
